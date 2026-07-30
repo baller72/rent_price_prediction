@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import os
+from pathlib import Path
 
 # --- CONFIGURATION DE LA PAGE ---
 st.set_page_config(
@@ -169,11 +170,14 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+ROOT = Path(__file__).resolve().parent.parent
+
 # --- CHARGEMENT DU MODÈLE ---
 @st.cache_resource
 def load_model():
-    model_path = '../models/best_model_tuned.joblib'
-    if os.path.exists(model_path):
+    #model_path = '../models/best_model_tuned.joblib'
+    model_path = ROOT / "models" / "best_model_tuned.joblib"
+    if model_path.exists():
         return joblib.load(model_path)
     else:
         st.error("Erreur : Le fichier '../models/best_model_tuned.joblib' est introuvable.")
