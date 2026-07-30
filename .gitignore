@@ -5,9 +5,9 @@ venv/
 env/
 .vscode/
 .DS_Store
-data/*.csv
-*.pkl
-*.joblib
+#data/*.csv
+#*.pkl
+#*.joblib
 *.ipynb_checkpoints
 
 01_EDA.ipynb
