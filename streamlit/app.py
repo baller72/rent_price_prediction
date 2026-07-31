@@ -36,23 +36,24 @@ st.markdown("""
     .hero-header {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        padding: 0.5rem 0 1.5rem 0;
-        border-bottom: 3px solid var(--primary);
+        /*gap: 50rem;*/
+        padding: 0.5rem 0 0.5rem 0;
+        border-bottom: 5px solid var(--primary);
         margin-bottom: 2rem;
     }
-    .hero-header h1 {
+    .hero-header span {
         font-weight: 700;
-        font-size: 2.4rem;
-        color: #EE4609;
+        font-size: 3rem;
+        color: var(--primary);
+        /*color: #EE4609;*/
         margin: 0;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
     }
     .hero-header .subtitle {
         font-weight: 400;
         color: #6B7280;
         font-size: 1.1rem;
-        margin-top: 0.2rem;
+        margin-top: 0rem;
     }
 
     /* Cartes de saisie – coins vifs, ombre légère */
@@ -190,7 +191,7 @@ model = load_model()
 col_logo, col_title = st.columns([1, 4])
 with col_logo:
     try:
-        st.image("mediabox_logo.png", width=100)
+        st.image("mediabox_logo.jpg", width=100)
     except:
         # Fallback si l'image n'est pas trouvée
         st.markdown("<div style='height:50px; width:50px; background:#F97316;'></div>", unsafe_allow_html=True)
@@ -199,7 +200,7 @@ with col_title:
     st.markdown("""
     <div class="hero-header">
         <div>
-            <h1>Estimateur de loyer</h1>
+            <span>Estimateur de loyer</span>
             <div class="subtitle">Obtenez une estimation du loyer mensuel à Bujumbura en quelques clics</div>
         </div>
     </div>
