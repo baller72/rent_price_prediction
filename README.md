@@ -100,7 +100,7 @@ Développement d'une interface web interactive avec **Streamlit**. Le modèle ch
 
 ## 📁 Structure du repository
 
-rent-price-prediction/<br>
+rent_price_prediction/<br>
 │<br>
 ├── data/ # Données brutes et traitées<br>
 │ └── rent_prediction.csv<br>
@@ -144,7 +144,7 @@ Pour reproduire ce projet dans un environnement propre, suivez ces étapes :
 
    ```bash
     git clone [URL_DU_DEPOT_GITHUB]
-    cd rent-price-prediction
+    cd rent_price_prediction
    ```
 
 2. **Créer un environnement virtuel** :
