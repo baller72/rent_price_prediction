@@ -192,7 +192,7 @@ Assurez-vous d'être à la racine du projet et que le fichier models/best_model_
 streamlit run streamlit/app.py
 ```
 
-L'application s'ouvrira automatiquement dans votre navigateur à l'adresse <http://localhost:8501>.
+L'application s'ouvrira automatiquement dans votre navigateur.
 
 ## 💼 Résultats & Valeur Business
 
